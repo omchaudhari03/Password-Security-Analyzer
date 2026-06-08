@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Security Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>🛡 Password Security Analyzer</h1>
+
+            <p class="subtitle">
+                Check your password strength and security score.
+            </p>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter Password"
+            >
+
+            <button id="analyzeBtn">
+                Analyze Password
+            </button>
+
+            <div class="meter">
+
+                <div id="strengthBar"></div>
+
+            </div>
+
+            <div class="results">
+
+                <div class="box">
+                    <h3>Security Score</h3>
+                    <p id="score">0 / 100</p>
+                </div>
+
+                <div class="box">
+                    <h3>Strength</h3>
+                    <p id="strength">Weak</p>
+                </div>
+
+                <div class="box">
+                    <h3>Entropy</h3>
+                    <p id="entropy">0 bits</p>
+                </div>
+
+                <div class="box">
+                    <h3>Crack Time</h3>
+                    <p id="crackTime">Unknown</p>
+                </div>
+
+            </div>
+
+            <div class="suggestions">
+
+                <h3>Security Suggestions</h3>
+
+                <ul id="suggestionsList">
+
+                </ul>
+
+            </div>
+
+            <div class="history">
+
+                <h3>Recent Analyses</h3>
+
+                <ul id="historyList">
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="passwords.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
